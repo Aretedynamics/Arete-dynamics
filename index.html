@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png">
+    <title>ARÊTE Dynamics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <canvas id="bgCanvas"></canvas>
+
+    <div class="top-banner">
+        ARÊTE Dynamics • STEM Racing Team • Essex
+    </div>
+
+    <div class="container">
+
+        <section class="hero">
+            <img src="logo.png" alt="ARETE Logo" class="hero-logo">
+
+            <h1 class="hero-title">
+                ARÊTE
+                <span>DYNAMICS</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                ENGINEERED FOR PERFORMANCE
+            </p>
+        </section>
+
+        <nav class="tabs">
+            <div class="tab-underline"></div>
+
+            <button class="tab-btn active" onclick="showTab(event, 'home')">HOME</button>
+            <button class="tab-btn" onclick="showTab(event, 'about')">ABOUT</button>
+            <button class="tab-btn" onclick="showTab(event, 'team')">TEAM</button>
+            <button class="tab-btn" onclick="showTab(event, 'innovation')">INNOVATION</button>
+            <button class="tab-btn" onclick="showTab(event, 'sponsors')">SPONSORS</button>
+            <button class="tab-btn" onclick="showTab(event, 'contact')">CONTACT</button>
+        </nav>
+
+        <section id="home" class="tab-content active">
+            <h2>HOME</h2>
+
+            <div class="home-intro">
+                <p>
+                    Welcome to the ARÊTE Dynamics development platform. We use this site to document
+                    our progress, ideas, team structure, sponsor work, and project updates as we move
+                    through the STEM Racing season. It is a central place for us to show how the team is
+                    developing, what we are working on, and how our engineering approach is taking shape.
+                </p>
+            </div>
+
+            <div class="home-focus-section">
+                <h3>CURRENT FOCUS</h3>
+
+                <div class="focus-grid">
+                    <div class="focus-card">
+                        <span>BRANDING</span>
+                        <p>
+                            We are refining our team identity, sponsor presentation, social media presence,
+                            and the way ARÊTE Dynamics is represented across every platform.
+                        </p>
+                    </div>
+
+                    <div class="focus-card">
+                        <span>RESEARCH</span>
+                        <p>
+                            We are studying aerodynamic concepts, manufacturing methods, and vehicle design
+                            principles while improving our CAD and technical design skills.
+                        </p>
+                    </div>
+
+                    <div class="focus-card">
+                        <span>PLANNING</span>
+                        <p>
+                            Now that we have built a strong foundation, we are narrowing down the tasks ahead
+                            and planning how each stage of the project will be completed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="updates-section">
+                <h3>PROJECT UPDATES</h3>
+
+                <div class="update-card">
+                    <div class="update-date">MAY 2026</div>
+
+                    <h4>DIGITAL PLATFORM & PUBLIC DEVELOPMENT</h4>
+
+                    <p>
+                        We launched our website and began building our public presence through social media,
+                        sponsor preparation, and clearer project documentation. The site now gives us a place
+                        to record updates, present our team professionally, and show the direction of ARÊTE
+                        Dynamics as the project develops.
+                    </p>
+                </div>
+
+                <div class="update-card">
+                    <div class="update-date">APRIL 2026</div>
+
+                    <h4>FOUNDATION & TEAM DEVELOPMENT</h4>
+
+                    <p>
+                        We established the early foundations of ARÊTE Dynamics by choosing our team name,
+                        defining roles, analysing competition regulations, developing logo ideas, starting
+                        design sketches, researching key engineering areas, and planning our first project
+                        pathways.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="tab-content">
+            <h2>ABOUT</h2>
+
+            <div class="about-logo-wrap">
+                <img src="logo.png" class="about-logo">
+            </div>
+
+            <div class="about-intro">
+                <p>
+                    We are ARÊTE Dynamics, a Year 12 STEM Racing team from Essex. We are building this
+                    project around engineering, teamwork, and competitive performance. Our aim is to approach
+                    every part of the competition properly: testing ideas, refining designs, learning from
+                    results, and making decisions with purpose.
+                </p>
+            </div>
+
+            <div class="principles-grid">
+                <div class="principle-card">
+                    <h3>INNOVATION</h3>
+                    <p>
+                        We want to think beyond the obvious and develop ideas through research, testing, and
+                        problem solving. Innovation for us means being willing to challenge a first idea,
+                        improve it, and keep searching for better solutions.
+                    </p>
+                </div>
+
+                <div class="principle-card">
+                    <h3>PERFORMANCE</h3>
+                    <p>
+                        We are focused on building a car and a team that can perform under pressure. Every
+                        design choice needs to support speed, consistency, efficiency, or reliability.
+                    </p>
+                </div>
+
+                <div class="principle-card">
+                    <h3>ELEGANCE</h3>
+                    <p>
+                        We believe good engineering should be clear, purposeful, and well executed. Our goal
+                        is to make work that is not only effective, but also clean, refined, and professional.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-closing">
+                <p>
+                    Through planning, discipline, and constant improvement, we want ARÊTE Dynamics to represent
+                    our school and our community at the highest standard we can reach.
+                </p>
+            </div>
+        </section>
+
+        <section id="team" class="tab-content">
+            <h2>MEET THE TEAM</h2>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="seb.png">
+                    <h3>SEB</h3>
+                    <p class="role">Project manager</p>
+                    <p class="statement">"I'm here to coordinate the team and maintain progress"</p>
+                </div>
+
+                <div class="team-card">
+                    <img src="henry.png">
+                    <h3>HENRY</h3>
+                    <p class="role">Finance manager</p>
+                    <p class="statement">"I'm in charge of tracking and spending money"</p>
+                </div>
+
+                <div class="team-card">
+                    <img src="adam.png">
+                    <h3>ADAM</h3>
+                    <p class="role">Manufacturing engineer</p>
+                    <p class="statement">"I'm working with Rishi to make the design functional"</p>
+                </div>
+
+                <div class="team-card">
+                    <img src="adam2.png">
+                    <h3>ADAM</h3>
+                    <p class="role">Sponsorship/Marketing manager</p>
+                    <p class="statement">"My job is to present ARETE to the world"</p>
+                </div>
+
+                <div class="team-card">
+                    <img src="rishi.png">
+                    <h3>RISHI</h3>
+                    <p class="role">Design engineer</p>
+                    <p class="statement">"My job is to design the fastest car possible"</p>
+                </div>
+
+                <div class="team-card">
+                    <img src="louis.png">
+                    <h3>LOUIS</h3>
+                    <p class="role">Graphic designer</p>
+                    <p class="statement">"I'm here to present ARETE visually"</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="innovation" class="tab-content">
+            <h2>ENGINEERING INSPIRATION</h2>
+
+            <div class="innovation-intro">
+                <p>
+                    We are interested in the moments where Formula One teams changed performance by thinking
+                    differently. These examples help us understand how unusual ideas, clever packaging, airflow
+                    control, and mechanical systems can change what is possible in racing.
+                </p>
+            </div>
+
+            <div class="innovation-list">
+
+                <div class="innovation-panel">
+                    <div class="innovation-image">
+                        <img src="bt46b.png" alt="Brabham BT46B Fan Car">
+                    </div>
+
+                    <div class="innovation-text">
+                        <span class="innovation-date">1978 • BRABHAM BT46B</span>
+                        <h3>THE FAN CAR</h3>
+
+                        <p>
+                            The Brabham BT46B used a rear-mounted fan to pull air from beneath the car,
+                            increasing downforce dramatically. It raced once, won, and was then withdrawn.
+                        </p>
+
+                        <p class="innovation-link">
+                            Why it matters to us: it shows how one bold idea can completely change performance.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="innovation-panel reverse">
+                    <div class="innovation-image">
+                        <img src="p34.png" alt="Tyrrell P34 Six Wheeled Formula One Car">
+                    </div>
+
+                    <div class="innovation-text">
+                        <span class="innovation-date">1976 • TYRRELL P34</span>
+                        <h3>THE SIX-WHEELER</h3>
+
+                        <p>
+                            The Tyrrell P34 used four smaller front wheels to reduce drag while keeping front-end
+                            grip. It is one of the most recognisable experimental designs in F1 history.
+                        </p>
+
+                        <p class="innovation-link">
+                            Why it matters to us: strange ideas still need strong engineering logic behind them.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="innovation-panel">
+                    <div class="innovation-image">
+                        <img src="lotus79.png" alt="Lotus 79 Ground Effect Formula One Car">
+                    </div>
+
+                    <div class="innovation-text">
+                        <span class="innovation-date">1978 • LOTUS 79</span>
+                        <h3>GROUND EFFECT</h3>
+
+                        <p>
+                            The Lotus 79 helped prove how powerful ground-effect aerodynamics could be by shaping
+                            airflow underneath the car to create downforce.
+                        </p>
+
+                        <p class="innovation-link">
+                            Why it matters to us: small airflow decisions can affect the entire vehicle.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="innovation-panel reverse">
+                    <div class="innovation-image">
+                        <img src="mercedes-das.png" alt="Mercedes DAS Steering System">
+                    </div>
+
+                    <div class="innovation-text">
+                        <span class="innovation-date">2020 • MERCEDES DAS</span>
+                        <h3>DUAL-AXIS STEERING</h3>
+
+                        <p>
+                            Mercedes' DAS system let the driver adjust the front wheel toe angle by moving the
+                            steering wheel forwards and backwards.
+                        </p>
+
+                        <p class="innovation-link">
+                            Why it matters to us: performance can come from control systems, not just body shape.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="innovation-panel">
+                    <div class="innovation-image">
+                        <img src="fduct.png" alt="McLaren F-Duct System">
+                    </div>
+
+                    <div class="innovation-text">
+                        <span class="innovation-date">2010 • McLAREN F-DUCT</span>
+                        <h3>DRAG REDUCTION THROUGH AIRFLOW</h3>
+
+                        <p>
+                            McLaren’s F-duct used airflow to stall the rear wing on straights, reducing drag while
+                            keeping downforce for corners.
+                        </p>
+
+                        <p class="innovation-link">
+                            Why it matters to us: efficient systems can create performance without unnecessary complexity.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="innovation-panel reverse">
+                    <div class="innovation-image">
+                        <img src="ferrari-macarena.png" alt="Ferrari Macarena Rear Wing">
+                    </div>
+
+                    <div class="innovation-text">
+                        <span class="innovation-date">2026 • FERRARI MACARENA WING</span>
+                        <h3>ROTATING ACTIVE AERODYNAMICS</h3>
+
+                        <p>
+                            Ferrari’s “Macarena” rear wing concept uses rotating active-aero movement rather than
+                            a simple flap opening, changing how the rear wing behaves in different conditions.
+                        </p>
+
+                        <p class="innovation-link">
+                            Why it matters to us: the best designs adapt to changing performance demands.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="sponsors" class="tab-content">
+            <h2>SPONSORS</h2>
+
+            <div class="sponsor-badge">
+                NOW SEEKING PARTNERS
+            </div>
+
+            <div class="sponsors-intro">
+                <p>
+                    We are currently looking for sponsors and partners to support the development of ARÊTE
+                    Dynamics. Sponsorship would help us improve our design, manufacturing, testing, media,
+                    and competition preparation while allowing us to represent partner brands professionally
+                    throughout the season.
+                </p>
+            </div>
+
+            <div class="sponsor-showcase">
+                <img src="logo.png" alt="Sponsor Example">
+
+                <div class="sponsor-info">
+                    <h3>ARÊTE DYNAMICS</h3>
+
+                    <p>
+                        Future sponsors will be showcased here with their logo, company name, description,
+                        and website link. This example shows how we plan to present partner brands cleanly
+                        and professionally.
+                    </p>
+
+                    <a href="#" class="sponsor-btn">
+                        VISIT WEBSITE
+                    </a>
+                </div>
+            </div>
+
+            <div class="why-partner">
+                <h3>WHY PARTNER WITH US</h3>
+
+                <p>
+                    By supporting ARÊTE Dynamics, sponsors become part of a student-led engineering project
+                    built around ambition, technical development, and professional presentation.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="tab-content">
+            <h2>CONTACT</h2>
+
+            <div class="contact-layout">
+                <div class="contact-left">
+                    <p>
+                        We are always open to support, advice, sponsorship opportunities, and contact from
+                        people or businesses interested in our project. Whether you want to follow our progress,
+                        support our fundraising, or speak to us about partnership opportunities, the links
+                        opposite are the best way to reach ARÊTE Dynamics.
+                    </p>
+
+                    <p>
+                        Any support we receive helps us move closer to building, testing, and competing at the
+                        highest standard we can. We want to work with people who believe in young engineers,
+                        practical STEM projects, and ambitious student-led competition.
+                    </p>
+                </div>
+
+                <div class="contact-right">
+                    <a href="mailto:dynamicsARETE@gmail.com" class="contact-card">
+                        <span>Email</span>
+                        <p>dynamicsARETE@gmail.com</p>
+                    </a>
+
+                    <a href="https://gofund.me/41be4627b" target="_blank" class="contact-card">
+                        <span>GoFundMe</span>
+                        <p>Click to support our project</p>
+                    </a>
+
+                    <div class="contact-card">
+                        <span>LinkedIn</span>
+                        <p>ARETE Dynamics</p>
+                    </div>
+
+                    <a href="#" class="contact-card">
+                        <span>Instagram</span>
+                        <p>@ARETEdynamics</p>
+                    </a>
+
+                    <a href="#" class="contact-card">
+                        <span>TikTok</span>
+                        <p>@aretedynamics</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            © 2026 ARÊTE Dynamics
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
