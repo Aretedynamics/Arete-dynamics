@@ -597,9 +597,24 @@ p {
     box-shadow: 0 0 30px rgba(107,188,255,0.08);
 }
 
-.sponsor-showcase img {
-    width: 120px;
-    opacity: 0.95;
+.sponsor-logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    min-height: 140px;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 14px;
+    background: #fff;
+}
+
+.sponsor-logo-link img {
+    display: block;
+    width: 100%;
+    max-height: 140px;
+    height: auto;
+    object-fit: contain;
 }
 
 .sponsor-info {
