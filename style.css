@@ -671,6 +671,37 @@ p {
     font-size: 16px;
 }
 
+/* WEBSITE PARTNER (IN-KIND) */
+.website-partner {
+    max-width: 900px;
+    margin: 46px auto 0;
+}
+.website-partner-kicker {
+    margin: 0 0 18px;
+    color: var(--text-dim);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+.sponsor-showcase.website-partner-card {
+    max-width: 790px;
+    padding: 28px 32px;
+}
+.website-partner-card .sponsor-logo-link {
+    min-height: 100px;
+}
+.website-partner-card .sponsor-logo-link img {
+    max-height: 100px;
+}
+.website-partner-card .sponsor-info h3 {
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+.website-partner-card .sponsor-info p {
+    margin-bottom: 18px;
+}
+
 /* CONTACT */
 
 .contact-layout {
