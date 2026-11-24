@@ -121,3 +121,53 @@ function animateStars() {
 }
 
 animateStars();
+
+/* ---------------- TEAM MOTIVATIONS ---------------- */
+
+document.querySelectorAll('.team-card').forEach(card => {
+    const toggle = card.querySelector('.team-motivation-toggle');
+    const panel = card.querySelector('.team-motivation');
+    if (!toggle || !panel) return;
+
+    let pinned = false;
+
+    function setOpen(open) {
+        panel.hidden = !open;
+        toggle.setAttribute('aria-expanded', String(open));
+    }
+
+    card.addEventListener('pointerenter', event => {
+        if (event.pointerType === 'mouse') setOpen(true);
+    });
+
+    card.addEventListener('pointerleave', event => {
+        if (event.pointerType === 'mouse' && !pinned) setOpen(false);
+    });
+
+    toggle.addEventListener('click', () => {
+        pinned = !pinned;
+        setOpen(pinned);
+    });
+
+    toggle.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && !panel.hidden) {
+            pinned = false;
+            setOpen(false);
+            event.preventDefault();
+        }
+    });
+
+    document.addEventListener('pointerdown', event => {
+        if (!card.contains(event.target)) {
+            pinned = false;
+            setOpen(false);
+        }
+    });
+
+    card.addEventListener('focusout', event => {
+        if (!card.contains(event.relatedTarget)) {
+            pinned = false;
+            setOpen(false);
+        }
+    });
+});
